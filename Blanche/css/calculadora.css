@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header - Cabeçario - Começo*/
+.cabecario{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.titulo-cabecario{
+    display: inline-block;
+    padding: 30px 0 0 150px;
+    font-size: 30px;
+}
+
+.lista-cabecario{
+    display: inline-block;
+    padding: 30px 0 0 830px;
+    font-size: 20px;
+    word-spacing: 30px;
+}
+
+.lista-cabecario li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;   
+}
+
+.cabecario a{
+    text-decoration: none;
+    color: #97C4B8;
+}
+
+.cabecario a:hover{
+    color: #a3c1e2;
+    font-size: 25px;
+    text-decoration:overline;
+}
+/*Header - Cabeçario - Final*/
+
+
+/*Main - calculadora  - Primeira Section - Parede 1 - Começo*/
+.container{
+    display: flex;
+    margin-left: 27px; 
+}
+
+#parede1{
+    background-image: linear-gradient(to bottom, #c4ddff, #b3d3ff, #a2c9ff, #91bfff, #7fb5ff);
+    width: 350px;
+    height: 520px;
+    padding-top: 50px;
+    margin:0 8px;
+    border-radius: 10px;
+}
+
+#parede1 h1{
+    text-align: center;
+    color: #F8F9D7;
+}
+
+#parede1-dados-usuario{
+    padding-left: 70px; 
+}
+
+#altura1{
+    margin: 10px 10px 10px 20px;
+    display: block;
+}
+
+#largura1{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#janela1{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#porta1{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#parede1-tinta{
+    text-align: center;
+    font-style: normal;
+    color: #F8F9D7;
+}
+/*Main - calculadora  - Primeira Section - Parede 1 - Final*/
+
+
+/*Main - calculadora  - Segunda Section - Parede 2 - Começo*/
+#parede2{
+    background-image: linear-gradient(to bottom, #c4ddff, #b3d3ff, #a2c9ff, #91bfff, #7fb5ff);
+    width: 350px;
+    height: 520px;
+    padding-top: 50px;
+    margin:0 8px;
+    border-radius: 10px;
+}
+
+#parede2 h1{
+    text-align: center;
+    color: #F8F9D7;
+}
+
+#parede2-dados-usuario{
+    padding-left: 70px;
+    
+}
+
+#altura2{
+    margin: 10px 10px 10px 20px;
+    display: block;
+}
+
+#largura2{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#janela2{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#porta2{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#parede2-tinta{
+    text-align: center;
+    font-style: normal;
+    color: #F8F9D7;
+}
+/*Main - calculadora  - Segunda Section - Parede 2 - Final*/
+
+
+/*Main - Calculadora  - Terceira Section - Parede 3 - Começo*/
+#parede3{
+    background-image: linear-gradient(to bottom, #c4ddff, #b3d3ff, #a2c9ff, #91bfff, #7fb5ff);
+    width: 350px;
+    height: 520px;
+    padding-top: 50px;
+    margin:0 8px;
+    border-radius: 10px;
+}
+
+#parede3 h1{
+    text-align: center;
+    color: #F8F9D7;
+}
+
+#parede3-dados-usuario{
+    padding-left: 70px;
+    
+}
+
+#altura3{
+    margin: 10px 10px 10px 20px;
+    display: block;
+}
+
+#largura3{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#janela3{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#porta3{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#parede3-tinta{
+    text-align: center;
+    font-style: normal;
+    color: #F8F9D7;
+}
+/*Main - Calculadora  - Terceira Section - Parede 3 - Final*/
+
+
+/*Main - Calculadora  - Quarta Section - Parede 4 - Começo*/
+#parede4{
+    background-image: linear-gradient(to bottom, #c4ddff, #b3d3ff, #a2c9ff, #91bfff, #7fb5ff);
+    width: 350px;
+    height: 520px;
+    padding-top: 50px;
+    margin:0 8px;
+    border-radius: 10px;
+}
+
+#parede4 h1{
+    text-align: center;
+    color: #F8F9D7;
+}
+
+#parede4-dados-usuario{
+    padding-left: 70px;
+    
+}
+
+#altura4{
+    margin: 10px 10px 10px 20px;
+    display: block;
+}
+
+#largura4{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#janela4{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#porta4{
+    margin: 20px 10px 10px 20px;
+    display: block;
+}
+
+#parede4-tinta{
+    text-align: center;
+    font-style: normal;
+    color: #F8F9D7;
+}
+/*Main - Calculadora  - Quarta Section - Parede 4 - Final*/
+
+
+/*Botão*/
+#botao{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right top, #6e85b7, #7d96c1, #8da7cb, #9fb7d5, #b2c8df);
+    color: white;
+    border: none;
+    margin: 15px 0 15px 710px;
+    font-size: 14px;  
+}
+
+#botao:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #b2c8df, #9fb7d5, #8da7cb, #7d96c1, #6e85b7);
+    color: white;
+}
+
+/*Footer*/
+footer{
+    background-color: #EFEAD8;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color: #5F7161
+}
+

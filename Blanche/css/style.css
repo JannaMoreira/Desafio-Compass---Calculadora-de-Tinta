@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Header - Cabeçario - Começo*/
+.cabecario{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.titulo-cabecario{
+    display: inline-block;
+    padding: 30px 0 0 150px;
+    font-size: 30px;
+}
+
+.lista-cabecario{
+    display: inline-block;
+    padding: 30px 0 0 830px;
+    font-size: 20px;
+    word-spacing: 30px;
+}
+
+.lista-cabecario li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;   
+}
+
+.cabecario a{
+    text-decoration: none;
+    color: #97C4B8;
+}
+
+.cabecario a:hover{
+    color: #a3c1e2;
+    font-size: 25px;
+    text-decoration:overline;
+}
+/*Header - Cabeçario - Final*/
+
+
+/*Main - Index - Primeira Section - Apresentação - Começo*/
+.apresentacao-imagem{
+    background-image: url("/Blanche/imagens/Headeer.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.apresentacao-artigo{
+    color: #2fb18f;
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+/*Main - Index - Primeira Section - Apresentação - Final*/
+
+
+/*Main - Index - Segunda Section - Cores - Começo*/
+.cores{
+    padding-top: 50px;
+}
+
+.cores-artigo h2{
+    padding-bottom: 30px;
+}
+
+.cores-artigo p{
+    padding-bottom: 25px;
+    line-height: 20px
+}
+
+.cores-imagem{
+    width: 100%;
+    height: 650px;
+    padding-bottom: 50px;
+}
+
+.cores-artigo{
+    text-align: center;
+}
+/*Main - Index - Segunda Section - Cores - Final*/
+
+
+/*Main - Index - Terceira Section - Calculadora - Começo*/
+.calculadora{
+    background-color: #F9F3EE;
+    width: 100%;
+    height: 810px;
+    padding-top: 160px;
+    margin-bottom: 20px;
+}
+
+.calculadora-artigo{
+   background-color: #CCF3EE;
+   width: 700px;
+   height: 470px;
+   padding: 140px 0 0 100px;
+   margin-left: 190px; 
+   text-align: left;
+}
+
+.calculadora-artigo h2{
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.calculadora-artigo p{
+    text-align: left;
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+.calculadora-imagem{
+    width: 550px;
+    float: right;
+    margin-top: -420px;
+    margin-right: 150px;
+}
+
+.botao{
+    margin: 10px 0 0 160px ;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    width: 150px;
+    color:#F9F3EE;
+    background-color: #97C4B8;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover{
+    color: rgb(162, 234, 234);
+    background-color:#f6e3e3;
+}
+
+/*Limpeza de Flutuadores*/
+.limpar{ 
+    clear: both;
+}
+/*Main - Index - Terceira Section - Calculadora - Final*/
+
+
+/*Main - Index - Quarta Section - Produto - Começo*/
+.produto{
+    margin: 60px 0 30px 0 ;
+    padding-top: 50px;
+    width: 100%;
+    height: 700px;
+}
+
+.produto-artigo{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.produto-artigo h4{
+    font-size: 30px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.produto-artigo p{
+    font-size: 18px;
+    width: 500px;
+    margin-left: 550px;
+    line-height: 22px;
+}
+/*Começo imagens*/
+
+.produto-encapsulamento-imagem{ 
+    margin: 40px 230px 0 235px;
+}
+
+.produto-imagem{
+    width: 200px;
+    height: 180px;
+    margin: 20px 30px 15px 30px;
+}
+
+.produto figure{
+    display: inline-block;
+}
+
+.produto figcaption{
+    margin-left: 100px;
+    padding-bottom: 15px;
+}
+
+.produto figure figcaption{
+    margin-right: 30px;
+    text-align: justify;
+}
+/*Main - Index - Quarta Section - Produto - Final*/
+
+
+/*Main - Index - Quinta Section - Sustentabilidade - Começo*/
+.sustentabilidade{
+    background-color: #6D8B74;
+    width: 100%;
+    height: 750px;
+    padding-top: 128px;
+    margin-bottom: 30px;
+}
+
+.sustentabilidade-artigo{
+   background-color: #D0C9C0;
+   width: 700px;
+   height: 470px;
+   padding: 170px 0 0 100px;
+   margin-left: 530px; 
+   text-align: left;
+}
+
+.sustentabilidade-artigo h2{
+    margin-right: 100px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.sustentabilidade-artigo p{
+    text-align: right;
+    width: 500px;
+    line-height: 22px;
+}
+
+.sustentabilidade-imagem{
+    width: 350px;
+    height: 440px;
+    float: left;
+    margin-top: -455px;
+    margin-left: 300px;
+}
+/*Main - Index - Quinta Section - Sustentabilidade - Final*/
+
+
+/*Footer*/
+footer{
+    background-color: #EFEAD8;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color: #5F7161
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Blanche/css/cadastro.css">
+    <title>Blanche - Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecario">
+            <h1 class="titulo-cabecario"><a href="/Blanche/html/index.html">Blanche</a></h1>
+            <ul class="lista-cabecario">
+                <li><a href="/Blanche/html/index.html">Home</a></li>
+                <li><a href="/Blanche/html/calculadora.html">Calculadora</a></li>
+                <li><a href="/Blanche/html/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <section class="informacoes-blanche">
+        <figure class="informacoes-imagem">
+            <img src="/Blanche/imagens/local.png">
+        </figure>
+        <figure class="informacoes-imagem">
+            <img src="/Blanche/imagens/Telefone.png">
+        </figure>
+        <figure class="informacoes-imagem">
+            <img src="/Blanche/imagens/Fax.png">
+        </figure>
+        <figure class="informacoes-imagem">
+            <img src="/Blanche/imagens/Email.png">
+        </figure>
+    </section>
+
+    <section class="formulario-blanche">
+       <form><!--Tag do Formulario-->
+        <fieldset> <!--Agrupar elementos dentro do formulario-->
+            <legend>Formulário do Cliente</legend>
+            <br>
+            <div class="formulario-dados">
+                <input type="text" name="nome" id="nome" class="formulario-input" pattern="^([ \u00c0-\u00ffa-zA-Z])+$" required>
+                <label for="nome" class="formulario-label">Nome</label>
+            </div>
+            <br><br>
+            <div class="formulario-dados">
+                <input type="text" name="sobrenome" id="sobrenome" class="formulario-input" pattern="^([ \u00c0-\u00ffa-zA-Z])+$" required>
+                <label for="sobrenome" class="formulario-label">Sobrenome</label>
+            </div>
+            <br><br>
+            <div class="formulario-dados">
+                <input type="text" name="email" id="email" class="formulario-input" required>
+                <label for="email" class="formulario-label">E-mail</label>
+            </div>
+            <br><br>
+            <div class="formulario-dados">
+                <input type="number" name="telefone" id="telefone" class="formulario-input"  pattern="([(]*\d{2}[)-]\s*)(\d{3,9}[-]*)(\d{4})\b" required>
+                <label for="telefone" class="formulario-label">Telefone</label>
+            </div>
+            <br><br>
+            <input type="submit" value="Enviar" id="botao">
+            
+
+        </fieldset>
+       </form>
+        
+    </section>
+
+</main>
+
+<footer class="limpar">
+    <p>Blanche &copy; 2022 - Todos os Direitos Reservados</p>
+</footer>
+
+<scrip src="/Blanche/js/cadastro.js"></scrip>
+
+</body>
+</html>
