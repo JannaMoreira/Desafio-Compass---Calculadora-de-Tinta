@@ -9,19 +9,21 @@
     width: 100%;
     height: 100px;
     background-color: whitesmoke;
+    word-spacing: 30px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .titulo-cabecario{
     display: inline-block;
-    padding: 30px 0 0 150px;
     font-size: 30px;
 }
 
 .lista-cabecario{
     display: inline-block;
-    padding: 30px 0 0 830px;
     font-size: 20px;
-    word-spacing: 30px;
+    padding-top: 10px;
 }
 
 .lista-cabecario li{
@@ -45,6 +47,7 @@
 
 /*Main - Index - Primeira Section - Apresentação - Começo*/
 .apresentacao-imagem{
+    text-align: center;
     background-image: url("/Blanche/imagens/Headeer.jpg");
     min-height: 100vh;
     background-attachment: fixed;
@@ -58,7 +61,6 @@
     position: absolute;
     top: 60%;
     left: 13%;
-    text-align: center;
     padding: 10px;
     font-size: 30px;
 }
@@ -153,33 +155,30 @@
 
 /*Main - Index - Quarta Section - Produto - Começo*/
 .produto{
-    margin: 60px 0 30px 0 ;
     padding-top: 50px;
     width: 100%;
     height: 700px;
+    text-align: center;
 }
 
 .produto-artigo{
-    text-align: center;
     padding-bottom: 100px;
 }
 
 .produto-artigo h4{
     font-size: 30px;
     padding-bottom: 16px;
-    text-align: center;
 }
 
 .produto-artigo p{
     font-size: 18px;
-    width: 500px;
-    margin-left: 550px;
     line-height: 22px;
 }
 /*Começo imagens*/
 
 .produto-encapsulamento-imagem{ 
-    margin: 40px 230px 0 235px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .produto-imagem{
