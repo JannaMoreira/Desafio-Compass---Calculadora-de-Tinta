@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/Blanche/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blanche - Home</title>
 </head>
+
 <body>
     <header>
-        <nav class="cabecario">
-            <h1 class="titulo-cabecario"><a href="/Blanche/html/index.html">Blanche</a></h1>
-            <ul class="lista-cabecario">
-                <li><a href="/Blanche/html/index.html">Home</a></li>
-                <li><a href="/Blanche/html/calculadora.html">Calculadora</a></li>
-                <li><a href="/Blanche/html/cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><a href="index.html">Blanche</a></div><!-- logo -->
+                <i class="fa fa-bars" id="hamburguer" onclick="myFunction()"></i><!-- fa fa-bars -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul><!-- menu -->
+            </div><!-- navbar-->
+        </div><!-- container-->
     </header>
 
     <main>
         <section class="apresentacao">
-           <div class="apresentacao-imagem"></div>
+            <div class="apresentacao-imagem"></div>
             <article class="apresentacao-artigo">
                 <h2>Crie um ambiente aconchegante com a gente em sua casa.</h2>
                 <p>Na Blanche oferecemos serviços de reformas residencias de primeira classe.</p>
@@ -31,57 +37,67 @@
         <section class="cores">
             <article class="cores-artigo">
                 <h2>Leque de Cores</h2>
-                <p> Com palhetas inspiradas nos mais diversos tons da natureza,<br> na Blanche você encontra desde cores brancas e leves, a cores intensas e vibrantes.<br>
-                     Procure a Blanche mais próxima de você e escolha a cor que deseja pincelar seu futuro.</p>
+                <p> Com palhetas inspiradas nos mais diversos tons da natureza,<br> na Blanche você encontra desde cores
+                    brancas e leves, a cores intensas e vibrantes.<br>
+                    Procure a Blanche mais próxima de você e escolha a cor que deseja pincelar seu futuro.</p>
             </article>
-            <img class="cores-imagem" src="/Blanche/imagens/palheta-cores.jpg"> 
+            <img class="cores-imagem" src="../imagens/palheta-cores.jpg">
         </section>
 
         <section class="calculadora">
-            <article class="calculadora-artigo">
-                <h2>Calculadora</h2>
-                <p>Pensando sempre em ajudar nossos clientes, a tomarem as melhores decisões, referente tanto a cor, quanto ao preço, a equipe da Blanche desenvolveu a calculadora inteligente.
-                    Nela você insere a altura, largura e a quantidade de  portas e janelas das suas paredes.</p>
-                <p>Logo depois de informar os dados ela calcula a área total da sua parede,e apresenta a quantidade necessária de tinta, para que você possa pintar sua sala, quarto, cozinha, banheiro ou até mesmo sua lavanderia, sem que falte uma única gota de tinta ou sobre mais que o necessário.
-                    Clique no botão abaixo para testa-la. </p>
-                <input class="botao" type="button" value="Calculadora" id="calculadora" onclick="Calculadora()">
-            </article>
-            <img class="calculadora-imagem" src="/Blanche/imagens/Calculadoraa.jpg">
+            <div class="calculadora-wraper">
+                <article class="calculadora-artigo">
+                    <h2>Calculadora</h2>
+                    <p>Pensando sempre em ajudar nossos clientes, a tomarem as melhores decisões, referente tanto a cor,
+                        quanto ao preço, a equipe da Blanche desenvolveu a calculadora inteligente.
+                        Nela você insere a altura, largura e a quantidade de portas e janelas das suas paredes.</p>
+                    <p>Logo depois de informar os dados ela calcula a área total da sua parede,e apresenta a quantidade
+                        necessária de tinta, para que você possa pintar sua sala, quarto, cozinha, banheiro ou até mesmo
+                        sua lavanderia, sem que falte uma única gota de tinta ou sobre mais que o necessário.
+                        Clique no botão abaixo para testa-la.</p>
+                    <img class="calculadora-imagem" src="../imagens/Calculadoraa.jpg">
+                    <input class="botao" type="button" value="Calculadora" id="calculadora" onclick="Calculadora()">
+                </article>
+            </div>
         </section>
 
         <section class="produto limpar">
             <article class="produto-artigo">
                 <h4>Qualidade Impecavel, independente do Produto.</h4>
-                <p>Além de possuirem um aroma suave, praticamente imperceptivel, nossas tintas entregam também uma fixação impecavel,  independentemente da área de aplicação.<br> 
+                <p>Além de possuirem um aroma suave, praticamente imperceptivel, nossas tintas entregam também uma
+                    fixação impecavel, independentemente da área de aplicação.<br>
                     Portanto basta escolher o item desejado, e lhe dar uma nova vida.</p>
             </article>
             <div class="produto-encapsulamento-imagem">
-                <figure>
-                    <img class="produto-imagem" src="/Blanche/imagens/parede.jpg"> 
+                <figure class="legenda">
+                    <img class="produto-imagem" src="../imagens/parede.jpg">
                     <figcaption>Paredes</figcaption>
                 </figure>
-                <figure>
-                    <img class="produto-imagem" src="/Blanche/imagens/porta-pintada.jpg"> 
+                <figure class="legenda">
+                    <img class="produto-imagem" src="../imagens/porta-pintada.jpg">
                     <figcaption>Madeiras</figcaption>
                 </figure>
-                <figure>
-                    <img class="produto-imagem" src="/Blanche/imagens/metal.jpg"> 
+                <figure class="legenda">
+                    <img class="produto-imagem" src="../imagens/metal.jpg">
                     <figcaption>Metais</figcaption>
                 </figure>
-                <figure>
-                    <img class="produto-imagem" src="/Blanche/imagens/complementos.jpg"> 
+                <figure class="legenda">
+                    <img class="produto-imagem" src="../imagens/complementos.jpg">
                     <figcaption>Complementos</figcaption>
                 </figure>
             </div>
-            
+
         </section>
 
         <section class="sustentabilidade">
-            <article class="sustentabilidade-artigo">
-                <h2>Sustentabilidade</h2>
-                <p>Nossos produtos são 100% ecológicos e livres<br> de qualquer fragmento tóxico, visando tanto<br> o bem estar do nosso cliente como do nosso <br>planeta.</p>
-            </article>
-            <img class="sustentabilidade-imagem" src="/Blanche/imagens/sustentabilidade.jpg">
+            <div class="sustentabilidade-wraper">
+                <article class="sustentabilidade-artigo">
+                    <h2>Sustentabilidade</h2>
+                    <p>Nossos produtos são 100% ecológicos e livres<br> de qualquer fragmento tóxico, visando tanto<br>
+                        o bem estar do nosso cliente como do nosso <br>planeta.</p>
+                    <img class="sustentabilidade-imagem" src="../imagens/sustentabilidade.jpg">
+                </article>
+            </div>
         </section>
     </main>
 
@@ -89,6 +105,8 @@
         <p>Blanche &copy; 2022 - Todos os Direitos Reservados</p>
     </footer>
 
-    <script src="/Blanche/js/botao-calculadora.js"></script>
+    <script src="../js/botao-calculadora.js"></script>
+    <script src="../js/botao-hamburguer.js"></script>
 </body>
+
 </html>

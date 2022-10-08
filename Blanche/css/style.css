@@ -1,55 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/*Header - Cabeçario - Começo*/
-.cabecario{
-    width: 100%;
-    height: 100px;
-    background-color: whitesmoke;
-    word-spacing: 30px;
-    padding: 25px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.titulo-cabecario{
-    display: inline-block;
-    font-size: 30px;
-}
-
-.lista-cabecario{
-    display: inline-block;
-    font-size: 20px;
-    padding-top: 10px;
-}
-
-.lista-cabecario li{
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;   
-}
-
-.cabecario a{
-    text-decoration: none;
-    color: #97C4B8;
-}
-
-.cabecario a:hover{
-    color: #a3c1e2;
-    font-size: 25px;
-    text-decoration:overline;
-}
-/*Header - Cabeçario - Final*/
+@import url(reset.css);
+@import url(cabecario.css);
 
 
 /*Main - Index - Primeira Section - Apresentação - Começo*/
 .apresentacao-imagem{
     text-align: center;
-    background-image: url("/Blanche/imagens/Headeer.jpg");
-    min-height: 100vh;
+    background-image: url("../imagens/pincel2.jpg");
+    min-height: calc(100vh - 77px);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,15 +14,22 @@
 }
 
 .apresentacao-artigo{
-    color: #2fb18f;
+    color: #F9F3EE;
     position: absolute;
-    top: 60%;
-    left: 13%;
-    padding: 10px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50% , -50%);
     font-size: 30px;
+    z-index: 1;
 }
-/*Main - Index - Primeira Section - Apresentação - Final*/
 
+.apresentacao-artigo h2{
+    margin-bottom: 50px;
+}
+
+/*Main - Index - Primeira Section - Apresentação - Final*/
 
 /*Main - Index - Segunda Section - Cores - Começo*/
 .cores{
@@ -100,6 +64,14 @@
     height: 810px;
     padding-top: 160px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.calculadora-wraper{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
 }
 
 .calculadora-artigo{
@@ -107,7 +79,6 @@
    width: 700px;
    height: 470px;
    padding: 140px 0 0 100px;
-   margin-left: 190px; 
    text-align: left;
 }
 
@@ -124,9 +95,10 @@
 
 .calculadora-imagem{
     width: 550px;
-    float: right;
-    margin-top: -420px;
-    margin-right: 150px;
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(0 , -50%);
 }
 
 .botao{
@@ -155,9 +127,8 @@
 
 /*Main - Index - Quarta Section - Produto - Começo*/
 .produto{
-    padding-top: 50px;
+    padding: 50px 0;
     width: 100%;
-    height: 700px;
     text-align: center;
 }
 
@@ -179,26 +150,14 @@
 .produto-encapsulamento-imagem{ 
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
 
 .produto-imagem{
     width: 200px;
     height: 180px;
     margin: 20px 30px 15px 30px;
-}
-
-.produto figure{
-    display: inline-block;
-}
-
-.produto figcaption{
-    margin-left: 100px;
-    padding-bottom: 15px;
-}
-
-.produto figure figcaption{
-    margin-right: 30px;
-    text-align: justify;
 }
 /*Main - Index - Quarta Section - Produto - Final*/
 
@@ -210,6 +169,14 @@
     height: 750px;
     padding-top: 128px;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.sustentabilidade-wraper{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(-18%, -50%);
 }
 
 .sustentabilidade-artigo{
@@ -217,28 +184,29 @@
    width: 700px;
    height: 470px;
    padding: 170px 0 0 100px;
-   margin-left: 530px; 
    text-align: left;
 }
 
 .sustentabilidade-artigo h2{
-    margin-right: 100px;
     padding-bottom: 20px;
     text-align: right;
+    margin-right: 100px;
 }
 
 .sustentabilidade-artigo p{
     text-align: right;
     width: 500px;
     line-height: 22px;
+    color: black;
 }
 
 .sustentabilidade-imagem{
     width: 350px;
     height: 440px;
-    float: left;
-    margin-top: -455px;
-    margin-left: 300px;
+    position: absolute;
+    top: 50%;
+    right: 85%;
+    transform: translate(0 , -50%);
 }
 /*Main - Index - Quinta Section - Sustentabilidade - Final*/
 
@@ -250,7 +218,254 @@ footer{
     height: 60px;
     text-align: center;
     padding-top: 20px;
-    color: #5F7161
+    color: #5F7161;
+    font-size: 19px;
 }
 
+@media only screen and (max-width:1630px){
+    .sustentabilidade-wraper{
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-18%, -50%);
+    }
 
+    .calculadora-wraper{
+        position: absolute;
+        top: 50%;
+        left: 21.5%;
+        transform: translate(-30%, -50%);
+    }
+}
+
+@media screen and (max-width:1100px){
+    .calculadora-wraper{
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        transform: translate(-30%, -50%);
+    }
+    
+    .calculadora-artigo{
+       background-color: #CCF3EE;
+       width: 450px;
+       height: 470px;
+       text-align: left;
+       padding: 50px 0 0 50px;
+    }
+    
+    .calculadora-artigo h2{
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    
+    .calculadora-artigo p{
+        text-align: left;
+        max-width: 330px;
+    }
+    
+    .calculadora-imagem{
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 93%;
+        transform: translate(0 , -50%);
+    }
+
+    .botao{
+        margin: 10px 0 0 100px;
+    }
+    
+    .sustentabilidade-wraper{
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .sustentabilidade-artigo{
+       background-color: #D0C9C0;
+       width: 560px;
+       height: 470px;
+       padding: 170px 0 0 100px;
+       text-align: left;
+    }
+    
+    .sustentabilidade-artigo h2{
+        padding-bottom: 20px;
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    .sustentabilidade-artigo p{
+        text-align: right;
+        max-width: 410px;
+        line-height: 22px;
+        color: black;
+    }
+    
+    .sustentabilidade-imagem{
+        width: 350px;
+        height: 440px;
+        position: absolute;
+        top: 50%;
+        right: 85%;
+        transform: translate(0 , -50%);
+    }
+    
+}
+
+@media screen and (max-width:1100px){
+    .calculadora-wraper{
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        transform: translate(-30%, -50%);
+    }
+    
+    .calculadora-artigo{
+       background-color: #CCF3EE;
+       width: 450px;
+       height: 470px;
+       text-align: left;
+       padding: 50px 0 0 50px;
+    }
+    
+    .calculadora-artigo h2{
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    
+    .calculadora-artigo p{
+        text-align: left;
+        max-width: 330px;
+    }
+    
+    .calculadora-imagem{
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 93%;
+        transform: translate(0 , -50%);
+    }
+
+    .botao{
+        margin: 10px 0 0 100px;
+    }
+    
+    .sustentabilidade-wraper{
+        position: absolute;
+        top: 50%;
+        right: 7%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .sustentabilidade-artigo{
+       background-color: #D0C9C0;
+       width: 560px;
+       height: 470px;
+       padding: 170px 0 0 100px;
+       text-align: left;
+    }
+    
+    .sustentabilidade-artigo h2{
+        padding-bottom: 20px;
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    .sustentabilidade-artigo p{
+        text-align: right;
+        max-width: 410px;
+        line-height: 22px;
+        color: black;
+    }
+    
+    .sustentabilidade-imagem{
+        width: 350px;
+        height: 440px;
+        position: absolute;
+        top: 50%;
+        right: 85%;
+        transform: translate(0 , -50%);
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .calculadora-wraper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .calculadora-artigo{
+       background-color: #CCF3EE;
+       width: 450px;
+       height: 470px;
+       text-align: left;
+       padding: 50px 0 0 50px;
+    }
+    
+    .calculadora-artigo h2{
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    
+    .calculadora-artigo p{
+        text-align: left;
+        max-width: 330px;
+    }
+    
+    .calculadora-imagem{
+        display: none;
+    }
+
+    .botao{
+        margin: 10px 0 0 100px;
+    }
+
+    .sustentabilidade{
+        background-color: #6D8B74;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .sustentabilidade-wraper{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .sustentabilidade-artigo{
+       background-color: #D0C9C0;
+       width: 100%;
+       height: 470px;
+       text-align: left;
+       padding: 50px 0 0 50px;
+       margin: 0;
+    }
+    
+    .sustentabilidade-artigo h2{
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    
+    .sustentabilidade-artigo p{
+        text-align: left;
+        max-width: 330px;
+    }
+    
+    .sustentabilidade-imagem{
+        display: none;
+    }
+
+    .produto-encapsulamento-imagem{ 
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
